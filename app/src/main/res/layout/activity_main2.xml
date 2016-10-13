@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainApplication">
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" >
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textViewIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/layout1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:ems="10"
+                android:gravity="center"
+                android:singleLine="true"
+                 />
+
+            <net.majorkernelpanic.streaming.gl.SurfaceView
+                android:id="@+id/surface"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/textViewIP" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:layout_alignBottom="@+id/surface"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Začnite streamati, da se prikaže kamera!"
+        android:id="@+id/textViewStartStream"
+        android:layout_above="@+id/imageButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="59dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic"
+        android:textSize="20dp"
+        android:textIsSelectable="true" />
+
+</RelativeLayout>

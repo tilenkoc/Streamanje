@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+
+    <ListPreference     android:title="Kvaliteta"
+        android:summary="Izberi željeno kvaliteto"
+        android:key="kvaliteta"
+        android:defaultValue="1"
+        android:entries="@array/videoResolutionArray"
+        android:entryValues="@array/videoResolutionArray" />
+
+
+
+    <ListPreference     android:title="Video kodek"
+        android:summary="Izberi video kodek"
+        android:key="videoKodek"
+        android:defaultValue="1"
+        android:entries="@array/videoEncoderArray"
+        android:entryValues="@array/videoEncoderValues" />
+
+    <ListPreference     android:title="Audio kodek"
+        android:summary="Izberi audio kodek"
+        android:key="audioKodek"
+        android:defaultValue="1"
+        android:entries="@array/audioEncoderArray"
+        android:entryValues="@array/audioEncoderValues" />
+
+    <ListPreference android:title="Video FPS"
+        android:summary="Izberi FPS"
+        android:key="videoFPS"
+        android:defaultValue="1"
+        android:entries="@array/videoFramerateArray"
+        android:entryValues="@array/videoFramerateValues"/>
+
+    <ListPreference android:title="BitRate"
+        android:key="video_bitrate" android:entryValues="@array/videoBitrateValues"
+        android:entries="@array/videoBitrateArray"/>
+
+    <EditTextPreference
+        android:defaultValue="8086"
+        android:inputType="number"
+        android:key="rtsp_port"
+        android:title="Izberi port za RTSP server" />
+
+    <Preference
+        android:title="About"
+        android:summary="v1.0   Avtorja: Aljaž Gaber, Tilen Kocbek "
+        android:key="about" />
+
+</PreferenceScreen>

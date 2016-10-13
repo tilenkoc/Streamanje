@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".main">
+
+
+    <item
+    android:id="@+id/nastavitve"
+    android:title="@string/nastavitve"
+    android:icon="@drawable/ikona"
+    app:showAsAction="always" />
+
+    <item android:title="@+id/quit" android:icon="@drawable/quit" android:id="@+id/quit" app:showAsAction="always"/>
+
+
+
+</menu>
